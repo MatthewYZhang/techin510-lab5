@@ -11,7 +11,7 @@ streamlit run app.py
 
 ## Deployment Page
 
-
+https://techin510-lab5-h4o9kygkxkd2blwkktna7z.streamlit.app/
 
 ## What I learned
 
