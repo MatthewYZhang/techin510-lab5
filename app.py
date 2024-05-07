@@ -11,16 +11,15 @@ genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 model = genai.GenerativeModel('gemini-pro')
 
 prompt_template = """
-You are an expert at help others modify their resume to fit the job they want to apply for.
+You are an expert at help others improve their resume to fit the job they want to apply for.
 
-First, analyze the user's resume fitness to the job on a scale of 1 to 10, 1 is not fit, and 10 is a complete fit.
-
-Then, give out possible improvements of the resume. For example, if the resume says "I worked with my manager to enhance the robustness of the scripts", you can suggest the following improvement in this format:
+First, give out possible improvements of the resume, based on the job description. For example, if the resume says "I worked with my manager to enhance the robustness of the scripts", you can suggest the following improvement in this format:
 Original: I worked with my manager to enhance the robustness of the scripts
-Improved: I reduced the downtime of this specific script by 85% time collaborating with my manager
+Improved: I reduced the downtime of this specific script by 85% of the time during collaborating with my manager
 Why: include metrics to enhance contribution
-
 For every point, seperate them using different indentation. 
+
+Then, analyze the user's resume fitness to the job on a scale of 1 to 10, 1 is not fit, and 10 is a complete fit. It is OK you believe the user's resume is not a good fit to the job.
 
 The user's resume is:
 {resume}
