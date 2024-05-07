@@ -20,4 +20,4 @@ https://techin510-lab5-h4o9kygkxkd2blwkktna7z.streamlit.app/
 
 ## Questions
 
-N/A
+1. How to control the output of LLMs in a very strict way?
